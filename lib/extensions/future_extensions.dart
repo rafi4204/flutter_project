@@ -1,0 +1,17 @@
+import 'package:flutter/foundation.dart';
+import 'package:flutter_template/data/services/response_error.dart';
+
+extension FutureExtensions<T> on Future<T> {
+  Future<T> catchPrintError(Function onError) {
+    return catchError((e, s) {
+      if (kDebugMode) {
+        debugPrint(e.toString());
+        debugPrint(s.toString());
+      }
+
+      final _error = ResponseError.from(e);
+
+      onError.call(_error, s);
+    });
+  }
+}
