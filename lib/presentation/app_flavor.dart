@@ -9,4 +9,13 @@ extension FlavorName on AppFlavor {
         return 'production';
     }
   }
+
+  String get baseUrl {
+    switch (this) {
+      case AppFlavor.staging:
+        return 'https://fakestoreapi.com/';
+      case AppFlavor.production:
+        return 'https://fakestoreapi.com/';
+    }
+  }
 }

@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     _timer = Timer(const Duration(seconds: 2), () {
-      injector.get<AppNavigator>().navigateToHome();
+      injector.get<AppNavigator>().navigateToLogin();
     });
     super.initState();
   }

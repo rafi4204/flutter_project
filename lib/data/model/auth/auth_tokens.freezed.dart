@@ -75,10 +75,11 @@ class _$AuthTokensCopyWithImpl<$Res> implements $AuthTokensCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$AuthTokensCopyWith<$Res> implements $AuthTokensCopyWith<$Res> {
-  factory _$AuthTokensCopyWith(
-          _AuthTokens value, $Res Function(_AuthTokens) then) =
-      __$AuthTokensCopyWithImpl<$Res>;
+abstract class _$$_AuthTokensCopyWith<$Res>
+    implements $AuthTokensCopyWith<$Res> {
+  factory _$$_AuthTokensCopyWith(
+          _$_AuthTokens value, $Res Function(_$_AuthTokens) then) =
+      __$$_AuthTokensCopyWithImpl<$Res>;
   @override
   $Res call(
       {String accessToken,
@@ -88,14 +89,14 @@ abstract class _$AuthTokensCopyWith<$Res> implements $AuthTokensCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$AuthTokensCopyWithImpl<$Res> extends _$AuthTokensCopyWithImpl<$Res>
-    implements _$AuthTokensCopyWith<$Res> {
-  __$AuthTokensCopyWithImpl(
-      _AuthTokens _value, $Res Function(_AuthTokens) _then)
-      : super(_value, (v) => _then(v as _AuthTokens));
+class __$$_AuthTokensCopyWithImpl<$Res> extends _$AuthTokensCopyWithImpl<$Res>
+    implements _$$_AuthTokensCopyWith<$Res> {
+  __$$_AuthTokensCopyWithImpl(
+      _$_AuthTokens _value, $Res Function(_$_AuthTokens) _then)
+      : super(_value, (v) => _then(v as _$_AuthTokens));
 
   @override
-  _AuthTokens get _value => super._value as _AuthTokens;
+  _$_AuthTokens get _value => super._value as _$_AuthTokens;
 
   @override
   $Res call({
@@ -104,7 +105,7 @@ class __$AuthTokensCopyWithImpl<$Res> extends _$AuthTokensCopyWithImpl<$Res>
     Object? tokenType = freezed,
     Object? expiresIn = freezed,
   }) {
-    return _then(_AuthTokens(
+    return _then(_$_AuthTokens(
       accessToken: accessToken == freezed
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
@@ -153,7 +154,7 @@ class _$_AuthTokens extends _AuthTokens {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AuthTokens &&
+            other is _$_AuthTokens &&
             const DeepCollectionEquality()
                 .equals(other.accessToken, accessToken) &&
             const DeepCollectionEquality()
@@ -172,8 +173,8 @@ class _$_AuthTokens extends _AuthTokens {
 
   @JsonKey(ignore: true)
   @override
-  _$AuthTokensCopyWith<_AuthTokens> get copyWith =>
-      __$AuthTokensCopyWithImpl<_AuthTokens>(this, _$identity);
+  _$$_AuthTokensCopyWith<_$_AuthTokens> get copyWith =>
+      __$$_AuthTokensCopyWithImpl<_$_AuthTokens>(this, _$identity);
 }
 
 abstract class _AuthTokens extends AuthTokens {
@@ -185,15 +186,15 @@ abstract class _AuthTokens extends AuthTokens {
   const _AuthTokens._() : super._();
 
   @override
-  String get accessToken => throw _privateConstructorUsedError;
+  String get accessToken;
   @override
-  String get refreshToken => throw _privateConstructorUsedError;
+  String get refreshToken;
   @override
-  String get tokenType => throw _privateConstructorUsedError;
+  String get tokenType;
   @override
-  double get expiresIn => throw _privateConstructorUsedError;
+  double get expiresIn;
   @override
   @JsonKey(ignore: true)
-  _$AuthTokensCopyWith<_AuthTokens> get copyWith =>
+  _$$_AuthTokensCopyWith<_$_AuthTokens> get copyWith =>
       throw _privateConstructorUsedError;
 }

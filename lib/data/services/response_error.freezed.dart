@@ -171,23 +171,23 @@ class _$ResponseErrorCopyWithImpl<T, $Res>
 }
 
 /// @nodoc
-abstract class _$NoInternetConnectionCopyWith<T, $Res> {
-  factory _$NoInternetConnectionCopyWith(_NoInternetConnection<T> value,
-          $Res Function(_NoInternetConnection<T>) then) =
-      __$NoInternetConnectionCopyWithImpl<T, $Res>;
+abstract class _$$_NoInternetConnectionCopyWith<T, $Res> {
+  factory _$$_NoInternetConnectionCopyWith(_$_NoInternetConnection<T> value,
+          $Res Function(_$_NoInternetConnection<T>) then) =
+      __$$_NoInternetConnectionCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$NoInternetConnectionCopyWithImpl<T, $Res>
+class __$$_NoInternetConnectionCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$NoInternetConnectionCopyWith<T, $Res> {
-  __$NoInternetConnectionCopyWithImpl(_NoInternetConnection<T> _value,
-      $Res Function(_NoInternetConnection<T>) _then)
-      : super(_value, (v) => _then(v as _NoInternetConnection<T>));
+    implements _$$_NoInternetConnectionCopyWith<T, $Res> {
+  __$$_NoInternetConnectionCopyWithImpl(_$_NoInternetConnection<T> _value,
+      $Res Function(_$_NoInternetConnection<T>) _then)
+      : super(_value, (v) => _then(v as _$_NoInternetConnection<T>));
 
   @override
-  _NoInternetConnection<T> get _value =>
-      super._value as _NoInternetConnection<T>;
+  _$_NoInternetConnection<T> get _value =>
+      super._value as _$_NoInternetConnection<T>;
 }
 
 /// @nodoc
@@ -204,15 +204,15 @@ class _$_NoInternetConnection<T> extends _NoInternetConnection<T>
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty(
-          'type', 'ResponseError<$T>.noInternetConnection'));
+    properties.add(
+        DiagnosticsProperty('type', 'ResponseError<$T>.noInternetConnection'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _NoInternetConnection<T>);
+        (other.runtimeType == runtimeType &&
+            other is _$_NoInternetConnection<T>);
   }
 
   @override
@@ -384,22 +384,22 @@ abstract class _NoInternetConnection<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$SendTimeoutCopyWith<T, $Res> {
-  factory _$SendTimeoutCopyWith(
-          _SendTimeout<T> value, $Res Function(_SendTimeout<T>) then) =
-      __$SendTimeoutCopyWithImpl<T, $Res>;
+abstract class _$$_SendTimeoutCopyWith<T, $Res> {
+  factory _$$_SendTimeoutCopyWith(
+          _$_SendTimeout<T> value, $Res Function(_$_SendTimeout<T>) then) =
+      __$$_SendTimeoutCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$SendTimeoutCopyWithImpl<T, $Res>
+class __$$_SendTimeoutCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$SendTimeoutCopyWith<T, $Res> {
-  __$SendTimeoutCopyWithImpl(
-      _SendTimeout<T> _value, $Res Function(_SendTimeout<T>) _then)
-      : super(_value, (v) => _then(v as _SendTimeout<T>));
+    implements _$$_SendTimeoutCopyWith<T, $Res> {
+  __$$_SendTimeoutCopyWithImpl(
+      _$_SendTimeout<T> _value, $Res Function(_$_SendTimeout<T>) _then)
+      : super(_value, (v) => _then(v as _$_SendTimeout<T>));
 
   @override
-  _SendTimeout<T> get _value => super._value as _SendTimeout<T>;
+  _$_SendTimeout<T> get _value => super._value as _$_SendTimeout<T>;
 }
 
 /// @nodoc
@@ -416,13 +416,13 @@ class _$_SendTimeout<T> extends _SendTimeout<T> with DiagnosticableTreeMixin {
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'ResponseError<$T>.sendTimeout'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.sendTimeout'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _SendTimeout<T>);
+        (other.runtimeType == runtimeType && other is _$_SendTimeout<T>);
   }
 
   @override
@@ -594,22 +594,22 @@ abstract class _SendTimeout<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$ConnectTimeoutCopyWith<T, $Res> {
-  factory _$ConnectTimeoutCopyWith(
-          _ConnectTimeout<T> value, $Res Function(_ConnectTimeout<T>) then) =
-      __$ConnectTimeoutCopyWithImpl<T, $Res>;
+abstract class _$$_ConnectTimeoutCopyWith<T, $Res> {
+  factory _$$_ConnectTimeoutCopyWith(_$_ConnectTimeout<T> value,
+          $Res Function(_$_ConnectTimeout<T>) then) =
+      __$$_ConnectTimeoutCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$ConnectTimeoutCopyWithImpl<T, $Res>
+class __$$_ConnectTimeoutCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$ConnectTimeoutCopyWith<T, $Res> {
-  __$ConnectTimeoutCopyWithImpl(
-      _ConnectTimeout<T> _value, $Res Function(_ConnectTimeout<T>) _then)
-      : super(_value, (v) => _then(v as _ConnectTimeout<T>));
+    implements _$$_ConnectTimeoutCopyWith<T, $Res> {
+  __$$_ConnectTimeoutCopyWithImpl(
+      _$_ConnectTimeout<T> _value, $Res Function(_$_ConnectTimeout<T>) _then)
+      : super(_value, (v) => _then(v as _$_ConnectTimeout<T>));
 
   @override
-  _ConnectTimeout<T> get _value => super._value as _ConnectTimeout<T>;
+  _$_ConnectTimeout<T> get _value => super._value as _$_ConnectTimeout<T>;
 }
 
 /// @nodoc
@@ -627,13 +627,13 @@ class _$_ConnectTimeout<T> extends _ConnectTimeout<T>
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'ResponseError<$T>.connectTimeout'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.connectTimeout'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _ConnectTimeout<T>);
+        (other.runtimeType == runtimeType && other is _$_ConnectTimeout<T>);
   }
 
   @override
@@ -805,22 +805,22 @@ abstract class _ConnectTimeout<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$ReceiveTimeoutCopyWith<T, $Res> {
-  factory _$ReceiveTimeoutCopyWith(
-          _ReceiveTimeout<T> value, $Res Function(_ReceiveTimeout<T>) then) =
-      __$ReceiveTimeoutCopyWithImpl<T, $Res>;
+abstract class _$$_ReceiveTimeoutCopyWith<T, $Res> {
+  factory _$$_ReceiveTimeoutCopyWith(_$_ReceiveTimeout<T> value,
+          $Res Function(_$_ReceiveTimeout<T>) then) =
+      __$$_ReceiveTimeoutCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$ReceiveTimeoutCopyWithImpl<T, $Res>
+class __$$_ReceiveTimeoutCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$ReceiveTimeoutCopyWith<T, $Res> {
-  __$ReceiveTimeoutCopyWithImpl(
-      _ReceiveTimeout<T> _value, $Res Function(_ReceiveTimeout<T>) _then)
-      : super(_value, (v) => _then(v as _ReceiveTimeout<T>));
+    implements _$$_ReceiveTimeoutCopyWith<T, $Res> {
+  __$$_ReceiveTimeoutCopyWithImpl(
+      _$_ReceiveTimeout<T> _value, $Res Function(_$_ReceiveTimeout<T>) _then)
+      : super(_value, (v) => _then(v as _$_ReceiveTimeout<T>));
 
   @override
-  _ReceiveTimeout<T> get _value => super._value as _ReceiveTimeout<T>;
+  _$_ReceiveTimeout<T> get _value => super._value as _$_ReceiveTimeout<T>;
 }
 
 /// @nodoc
@@ -838,13 +838,13 @@ class _$_ReceiveTimeout<T> extends _ReceiveTimeout<T>
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'ResponseError<$T>.receiveTimeout'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.receiveTimeout'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _ReceiveTimeout<T>);
+        (other.runtimeType == runtimeType && other is _$_ReceiveTimeout<T>);
   }
 
   @override
@@ -1016,29 +1016,29 @@ abstract class _ReceiveTimeout<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$BadRequestCopyWith<T, $Res> {
-  factory _$BadRequestCopyWith(
-          _BadRequest<T> value, $Res Function(_BadRequest<T>) then) =
-      __$BadRequestCopyWithImpl<T, $Res>;
+abstract class _$$_BadRequestCopyWith<T, $Res> {
+  factory _$$_BadRequestCopyWith(
+          _$_BadRequest<T> value, $Res Function(_$_BadRequest<T>) then) =
+      __$$_BadRequestCopyWithImpl<T, $Res>;
   $Res call({ErrorName errorName});
 }
 
 /// @nodoc
-class __$BadRequestCopyWithImpl<T, $Res>
+class __$$_BadRequestCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$BadRequestCopyWith<T, $Res> {
-  __$BadRequestCopyWithImpl(
-      _BadRequest<T> _value, $Res Function(_BadRequest<T>) _then)
-      : super(_value, (v) => _then(v as _BadRequest<T>));
+    implements _$$_BadRequestCopyWith<T, $Res> {
+  __$$_BadRequestCopyWithImpl(
+      _$_BadRequest<T> _value, $Res Function(_$_BadRequest<T>) _then)
+      : super(_value, (v) => _then(v as _$_BadRequest<T>));
 
   @override
-  _BadRequest<T> get _value => super._value as _BadRequest<T>;
+  _$_BadRequest<T> get _value => super._value as _$_BadRequest<T>;
 
   @override
   $Res call({
     Object? errorName = freezed,
   }) {
-    return _then(_BadRequest<T>(
+    return _then(_$_BadRequest<T>(
       errorName == freezed
           ? _value.errorName
           : errorName // ignore: cast_nullable_to_non_nullable
@@ -1072,7 +1072,7 @@ class _$_BadRequest<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _BadRequest<T> &&
+            other is _$_BadRequest<T> &&
             const DeepCollectionEquality().equals(other.errorName, errorName));
   }
 
@@ -1082,8 +1082,8 @@ class _$_BadRequest<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
 
   @JsonKey(ignore: true)
   @override
-  _$BadRequestCopyWith<T, _BadRequest<T>> get copyWith =>
-      __$BadRequestCopyWithImpl<T, _BadRequest<T>>(this, _$identity);
+  _$$_BadRequestCopyWith<T, _$_BadRequest<T>> get copyWith =>
+      __$$_BadRequestCopyWithImpl<T, _$_BadRequest<T>>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1249,29 +1249,29 @@ abstract class _BadRequest<T> extends ResponseError<T> {
   const factory _BadRequest(final ErrorName errorName) = _$_BadRequest<T>;
   const _BadRequest._() : super._();
 
-  ErrorName get errorName => throw _privateConstructorUsedError;
+  ErrorName get errorName;
   @JsonKey(ignore: true)
-  _$BadRequestCopyWith<T, _BadRequest<T>> get copyWith =>
+  _$$_BadRequestCopyWith<T, _$_BadRequest<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$NotFoundCopyWith<T, $Res> {
-  factory _$NotFoundCopyWith(
-          _NotFound<T> value, $Res Function(_NotFound<T>) then) =
-      __$NotFoundCopyWithImpl<T, $Res>;
+abstract class _$$_NotFoundCopyWith<T, $Res> {
+  factory _$$_NotFoundCopyWith(
+          _$_NotFound<T> value, $Res Function(_$_NotFound<T>) then) =
+      __$$_NotFoundCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$NotFoundCopyWithImpl<T, $Res>
+class __$$_NotFoundCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$NotFoundCopyWith<T, $Res> {
-  __$NotFoundCopyWithImpl(
-      _NotFound<T> _value, $Res Function(_NotFound<T>) _then)
-      : super(_value, (v) => _then(v as _NotFound<T>));
+    implements _$$_NotFoundCopyWith<T, $Res> {
+  __$$_NotFoundCopyWithImpl(
+      _$_NotFound<T> _value, $Res Function(_$_NotFound<T>) _then)
+      : super(_value, (v) => _then(v as _$_NotFound<T>));
 
   @override
-  _NotFound<T> get _value => super._value as _NotFound<T>;
+  _$_NotFound<T> get _value => super._value as _$_NotFound<T>;
 }
 
 /// @nodoc
@@ -1287,13 +1287,13 @@ class _$_NotFound<T> extends _NotFound<T> with DiagnosticableTreeMixin {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'ResponseError<$T>.notFound'));
+    properties.add(DiagnosticsProperty('type', 'ResponseError<$T>.notFound'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _NotFound<T>);
+        (other.runtimeType == runtimeType && other is _$_NotFound<T>);
   }
 
   @override
@@ -1465,22 +1465,22 @@ abstract class _NotFound<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$TooManyRequestsCopyWith<T, $Res> {
-  factory _$TooManyRequestsCopyWith(
-          _TooManyRequests<T> value, $Res Function(_TooManyRequests<T>) then) =
-      __$TooManyRequestsCopyWithImpl<T, $Res>;
+abstract class _$$_TooManyRequestsCopyWith<T, $Res> {
+  factory _$$_TooManyRequestsCopyWith(_$_TooManyRequests<T> value,
+          $Res Function(_$_TooManyRequests<T>) then) =
+      __$$_TooManyRequestsCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$TooManyRequestsCopyWithImpl<T, $Res>
+class __$$_TooManyRequestsCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$TooManyRequestsCopyWith<T, $Res> {
-  __$TooManyRequestsCopyWithImpl(
-      _TooManyRequests<T> _value, $Res Function(_TooManyRequests<T>) _then)
-      : super(_value, (v) => _then(v as _TooManyRequests<T>));
+    implements _$$_TooManyRequestsCopyWith<T, $Res> {
+  __$$_TooManyRequestsCopyWithImpl(
+      _$_TooManyRequests<T> _value, $Res Function(_$_TooManyRequests<T>) _then)
+      : super(_value, (v) => _then(v as _$_TooManyRequests<T>));
 
   @override
-  _TooManyRequests<T> get _value => super._value as _TooManyRequests<T>;
+  _$_TooManyRequests<T> get _value => super._value as _$_TooManyRequests<T>;
 }
 
 /// @nodoc
@@ -1498,13 +1498,13 @@ class _$_TooManyRequests<T> extends _TooManyRequests<T>
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'ResponseError<$T>.tooManyRequests'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.tooManyRequests'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _TooManyRequests<T>);
+        (other.runtimeType == runtimeType && other is _$_TooManyRequests<T>);
   }
 
   @override
@@ -1676,22 +1676,23 @@ abstract class _TooManyRequests<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$UnprocessableEntityCopyWith<T, $Res> {
-  factory _$UnprocessableEntityCopyWith(_UnprocessableEntity<T> value,
-          $Res Function(_UnprocessableEntity<T>) then) =
-      __$UnprocessableEntityCopyWithImpl<T, $Res>;
+abstract class _$$_UnprocessableEntityCopyWith<T, $Res> {
+  factory _$$_UnprocessableEntityCopyWith(_$_UnprocessableEntity<T> value,
+          $Res Function(_$_UnprocessableEntity<T>) then) =
+      __$$_UnprocessableEntityCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$UnprocessableEntityCopyWithImpl<T, $Res>
+class __$$_UnprocessableEntityCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$UnprocessableEntityCopyWith<T, $Res> {
-  __$UnprocessableEntityCopyWithImpl(_UnprocessableEntity<T> _value,
-      $Res Function(_UnprocessableEntity<T>) _then)
-      : super(_value, (v) => _then(v as _UnprocessableEntity<T>));
+    implements _$$_UnprocessableEntityCopyWith<T, $Res> {
+  __$$_UnprocessableEntityCopyWithImpl(_$_UnprocessableEntity<T> _value,
+      $Res Function(_$_UnprocessableEntity<T>) _then)
+      : super(_value, (v) => _then(v as _$_UnprocessableEntity<T>));
 
   @override
-  _UnprocessableEntity<T> get _value => super._value as _UnprocessableEntity<T>;
+  _$_UnprocessableEntity<T> get _value =>
+      super._value as _$_UnprocessableEntity<T>;
 }
 
 /// @nodoc
@@ -1708,15 +1709,15 @@ class _$_UnprocessableEntity<T> extends _UnprocessableEntity<T>
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties
-      ..add(
-          DiagnosticsProperty('type', 'ResponseError<$T>.unprocessableEntity'));
+    properties.add(
+        DiagnosticsProperty('type', 'ResponseError<$T>.unprocessableEntity'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _UnprocessableEntity<T>);
+        (other.runtimeType == runtimeType &&
+            other is _$_UnprocessableEntity<T>);
   }
 
   @override
@@ -1888,22 +1889,23 @@ abstract class _UnprocessableEntity<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$InternalServerErrorCopyWith<T, $Res> {
-  factory _$InternalServerErrorCopyWith(_InternalServerError<T> value,
-          $Res Function(_InternalServerError<T>) then) =
-      __$InternalServerErrorCopyWithImpl<T, $Res>;
+abstract class _$$_InternalServerErrorCopyWith<T, $Res> {
+  factory _$$_InternalServerErrorCopyWith(_$_InternalServerError<T> value,
+          $Res Function(_$_InternalServerError<T>) then) =
+      __$$_InternalServerErrorCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$InternalServerErrorCopyWithImpl<T, $Res>
+class __$$_InternalServerErrorCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$InternalServerErrorCopyWith<T, $Res> {
-  __$InternalServerErrorCopyWithImpl(_InternalServerError<T> _value,
-      $Res Function(_InternalServerError<T>) _then)
-      : super(_value, (v) => _then(v as _InternalServerError<T>));
+    implements _$$_InternalServerErrorCopyWith<T, $Res> {
+  __$$_InternalServerErrorCopyWithImpl(_$_InternalServerError<T> _value,
+      $Res Function(_$_InternalServerError<T>) _then)
+      : super(_value, (v) => _then(v as _$_InternalServerError<T>));
 
   @override
-  _InternalServerError<T> get _value => super._value as _InternalServerError<T>;
+  _$_InternalServerError<T> get _value =>
+      super._value as _$_InternalServerError<T>;
 }
 
 /// @nodoc
@@ -1920,15 +1922,15 @@ class _$_InternalServerError<T> extends _InternalServerError<T>
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties
-      ..add(
-          DiagnosticsProperty('type', 'ResponseError<$T>.internalServerError'));
+    properties.add(
+        DiagnosticsProperty('type', 'ResponseError<$T>.internalServerError'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _InternalServerError<T>);
+        (other.runtimeType == runtimeType &&
+            other is _$_InternalServerError<T>);
   }
 
   @override
@@ -2100,22 +2102,22 @@ abstract class _InternalServerError<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$UnexpectedErrorCopyWith<T, $Res> {
-  factory _$UnexpectedErrorCopyWith(
-          _UnexpectedError<T> value, $Res Function(_UnexpectedError<T>) then) =
-      __$UnexpectedErrorCopyWithImpl<T, $Res>;
+abstract class _$$_UnexpectedErrorCopyWith<T, $Res> {
+  factory _$$_UnexpectedErrorCopyWith(_$_UnexpectedError<T> value,
+          $Res Function(_$_UnexpectedError<T>) then) =
+      __$$_UnexpectedErrorCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$UnexpectedErrorCopyWithImpl<T, $Res>
+class __$$_UnexpectedErrorCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$UnexpectedErrorCopyWith<T, $Res> {
-  __$UnexpectedErrorCopyWithImpl(
-      _UnexpectedError<T> _value, $Res Function(_UnexpectedError<T>) _then)
-      : super(_value, (v) => _then(v as _UnexpectedError<T>));
+    implements _$$_UnexpectedErrorCopyWith<T, $Res> {
+  __$$_UnexpectedErrorCopyWithImpl(
+      _$_UnexpectedError<T> _value, $Res Function(_$_UnexpectedError<T>) _then)
+      : super(_value, (v) => _then(v as _$_UnexpectedError<T>));
 
   @override
-  _UnexpectedError<T> get _value => super._value as _UnexpectedError<T>;
+  _$_UnexpectedError<T> get _value => super._value as _$_UnexpectedError<T>;
 }
 
 /// @nodoc
@@ -2133,13 +2135,13 @@ class _$_UnexpectedError<T> extends _UnexpectedError<T>
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'ResponseError<$T>.unexpectedError'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.unexpectedError'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _UnexpectedError<T>);
+        (other.runtimeType == runtimeType && other is _$_UnexpectedError<T>);
   }
 
   @override
@@ -2311,22 +2313,22 @@ abstract class _UnexpectedError<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$RequestCancelledCopyWith<T, $Res> {
-  factory _$RequestCancelledCopyWith(_RequestCancelled<T> value,
-          $Res Function(_RequestCancelled<T>) then) =
-      __$RequestCancelledCopyWithImpl<T, $Res>;
+abstract class _$$_RequestCancelledCopyWith<T, $Res> {
+  factory _$$_RequestCancelledCopyWith(_$_RequestCancelled<T> value,
+          $Res Function(_$_RequestCancelled<T>) then) =
+      __$$_RequestCancelledCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$RequestCancelledCopyWithImpl<T, $Res>
+class __$$_RequestCancelledCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$RequestCancelledCopyWith<T, $Res> {
-  __$RequestCancelledCopyWithImpl(
-      _RequestCancelled<T> _value, $Res Function(_RequestCancelled<T>) _then)
-      : super(_value, (v) => _then(v as _RequestCancelled<T>));
+    implements _$$_RequestCancelledCopyWith<T, $Res> {
+  __$$_RequestCancelledCopyWithImpl(_$_RequestCancelled<T> _value,
+      $Res Function(_$_RequestCancelled<T>) _then)
+      : super(_value, (v) => _then(v as _$_RequestCancelled<T>));
 
   @override
-  _RequestCancelled<T> get _value => super._value as _RequestCancelled<T>;
+  _$_RequestCancelled<T> get _value => super._value as _$_RequestCancelled<T>;
 }
 
 /// @nodoc
@@ -2344,13 +2346,13 @@ class _$_RequestCancelled<T> extends _RequestCancelled<T>
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'ResponseError<$T>.requestCancelled'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.requestCancelled'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _RequestCancelled<T>);
+        (other.runtimeType == runtimeType && other is _$_RequestCancelled<T>);
   }
 
   @override
@@ -2522,22 +2524,22 @@ abstract class _RequestCancelled<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$ConflictCopyWith<T, $Res> {
-  factory _$ConflictCopyWith(
-          _Conflict<T> value, $Res Function(_Conflict<T>) then) =
-      __$ConflictCopyWithImpl<T, $Res>;
+abstract class _$$_ConflictCopyWith<T, $Res> {
+  factory _$$_ConflictCopyWith(
+          _$_Conflict<T> value, $Res Function(_$_Conflict<T>) then) =
+      __$$_ConflictCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$ConflictCopyWithImpl<T, $Res>
+class __$$_ConflictCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$ConflictCopyWith<T, $Res> {
-  __$ConflictCopyWithImpl(
-      _Conflict<T> _value, $Res Function(_Conflict<T>) _then)
-      : super(_value, (v) => _then(v as _Conflict<T>));
+    implements _$$_ConflictCopyWith<T, $Res> {
+  __$$_ConflictCopyWithImpl(
+      _$_Conflict<T> _value, $Res Function(_$_Conflict<T>) _then)
+      : super(_value, (v) => _then(v as _$_Conflict<T>));
 
   @override
-  _Conflict<T> get _value => super._value as _Conflict<T>;
+  _$_Conflict<T> get _value => super._value as _$_Conflict<T>;
 }
 
 /// @nodoc
@@ -2553,13 +2555,13 @@ class _$_Conflict<T> extends _Conflict<T> with DiagnosticableTreeMixin {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'ResponseError<$T>.conflict'));
+    properties.add(DiagnosticsProperty('type', 'ResponseError<$T>.conflict'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _Conflict<T>);
+        (other.runtimeType == runtimeType && other is _$_Conflict<T>);
   }
 
   @override
@@ -2731,22 +2733,22 @@ abstract class _Conflict<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$UnauthorizedCopyWith<T, $Res> {
-  factory _$UnauthorizedCopyWith(
-          _Unauthorized<T> value, $Res Function(_Unauthorized<T>) then) =
-      __$UnauthorizedCopyWithImpl<T, $Res>;
+abstract class _$$_UnauthorizedCopyWith<T, $Res> {
+  factory _$$_UnauthorizedCopyWith(
+          _$_Unauthorized<T> value, $Res Function(_$_Unauthorized<T>) then) =
+      __$$_UnauthorizedCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$UnauthorizedCopyWithImpl<T, $Res>
+class __$$_UnauthorizedCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$UnauthorizedCopyWith<T, $Res> {
-  __$UnauthorizedCopyWithImpl(
-      _Unauthorized<T> _value, $Res Function(_Unauthorized<T>) _then)
-      : super(_value, (v) => _then(v as _Unauthorized<T>));
+    implements _$$_UnauthorizedCopyWith<T, $Res> {
+  __$$_UnauthorizedCopyWithImpl(
+      _$_Unauthorized<T> _value, $Res Function(_$_Unauthorized<T>) _then)
+      : super(_value, (v) => _then(v as _$_Unauthorized<T>));
 
   @override
-  _Unauthorized<T> get _value => super._value as _Unauthorized<T>;
+  _$_Unauthorized<T> get _value => super._value as _$_Unauthorized<T>;
 }
 
 /// @nodoc
@@ -2763,13 +2765,13 @@ class _$_Unauthorized<T> extends _Unauthorized<T> with DiagnosticableTreeMixin {
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'ResponseError<$T>.unauthorized'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.unauthorized'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _Unauthorized<T>);
+        (other.runtimeType == runtimeType && other is _$_Unauthorized<T>);
   }
 
   @override
@@ -2941,23 +2943,23 @@ abstract class _Unauthorized<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$InvalidPasswordErrorCopyWith<T, $Res> {
-  factory _$InvalidPasswordErrorCopyWith(_InvalidPasswordError<T> value,
-          $Res Function(_InvalidPasswordError<T>) then) =
-      __$InvalidPasswordErrorCopyWithImpl<T, $Res>;
+abstract class _$$_InvalidPasswordErrorCopyWith<T, $Res> {
+  factory _$$_InvalidPasswordErrorCopyWith(_$_InvalidPasswordError<T> value,
+          $Res Function(_$_InvalidPasswordError<T>) then) =
+      __$$_InvalidPasswordErrorCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$InvalidPasswordErrorCopyWithImpl<T, $Res>
+class __$$_InvalidPasswordErrorCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$InvalidPasswordErrorCopyWith<T, $Res> {
-  __$InvalidPasswordErrorCopyWithImpl(_InvalidPasswordError<T> _value,
-      $Res Function(_InvalidPasswordError<T>) _then)
-      : super(_value, (v) => _then(v as _InvalidPasswordError<T>));
+    implements _$$_InvalidPasswordErrorCopyWith<T, $Res> {
+  __$$_InvalidPasswordErrorCopyWithImpl(_$_InvalidPasswordError<T> _value,
+      $Res Function(_$_InvalidPasswordError<T>) _then)
+      : super(_value, (v) => _then(v as _$_InvalidPasswordError<T>));
 
   @override
-  _InvalidPasswordError<T> get _value =>
-      super._value as _InvalidPasswordError<T>;
+  _$_InvalidPasswordError<T> get _value =>
+      super._value as _$_InvalidPasswordError<T>;
 }
 
 /// @nodoc
@@ -2975,13 +2977,14 @@ class _$_InvalidPasswordError<T> extends _InvalidPasswordError<T>
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'ResponseError<$T>.invalidPassword'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.invalidPassword'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _InvalidPasswordError<T>);
+        (other.runtimeType == runtimeType &&
+            other is _$_InvalidPasswordError<T>);
   }
 
   @override
@@ -3153,22 +3156,22 @@ abstract class _InvalidPasswordError<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$InvalidEmailErrorCopyWith<T, $Res> {
-  factory _$InvalidEmailErrorCopyWith(_InvalidEmailError<T> value,
-          $Res Function(_InvalidEmailError<T>) then) =
-      __$InvalidEmailErrorCopyWithImpl<T, $Res>;
+abstract class _$$_InvalidEmailErrorCopyWith<T, $Res> {
+  factory _$$_InvalidEmailErrorCopyWith(_$_InvalidEmailError<T> value,
+          $Res Function(_$_InvalidEmailError<T>) then) =
+      __$$_InvalidEmailErrorCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$InvalidEmailErrorCopyWithImpl<T, $Res>
+class __$$_InvalidEmailErrorCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$InvalidEmailErrorCopyWith<T, $Res> {
-  __$InvalidEmailErrorCopyWithImpl(
-      _InvalidEmailError<T> _value, $Res Function(_InvalidEmailError<T>) _then)
-      : super(_value, (v) => _then(v as _InvalidEmailError<T>));
+    implements _$$_InvalidEmailErrorCopyWith<T, $Res> {
+  __$$_InvalidEmailErrorCopyWithImpl(_$_InvalidEmailError<T> _value,
+      $Res Function(_$_InvalidEmailError<T>) _then)
+      : super(_value, (v) => _then(v as _$_InvalidEmailError<T>));
 
   @override
-  _InvalidEmailError<T> get _value => super._value as _InvalidEmailError<T>;
+  _$_InvalidEmailError<T> get _value => super._value as _$_InvalidEmailError<T>;
 }
 
 /// @nodoc
@@ -3186,13 +3189,13 @@ class _$_InvalidEmailError<T> extends _InvalidEmailError<T>
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'ResponseError<$T>.invalidEmail'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.invalidEmail'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _InvalidEmailError<T>);
+        (other.runtimeType == runtimeType && other is _$_InvalidEmailError<T>);
   }
 
   @override
@@ -3364,23 +3367,24 @@ abstract class _InvalidEmailError<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$InvalidLoginCredentialsCopyWith<T, $Res> {
-  factory _$InvalidLoginCredentialsCopyWith(_InvalidLoginCredentials<T> value,
-          $Res Function(_InvalidLoginCredentials<T>) then) =
-      __$InvalidLoginCredentialsCopyWithImpl<T, $Res>;
+abstract class _$$_InvalidLoginCredentialsCopyWith<T, $Res> {
+  factory _$$_InvalidLoginCredentialsCopyWith(
+          _$_InvalidLoginCredentials<T> value,
+          $Res Function(_$_InvalidLoginCredentials<T>) then) =
+      __$$_InvalidLoginCredentialsCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$InvalidLoginCredentialsCopyWithImpl<T, $Res>
+class __$$_InvalidLoginCredentialsCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$InvalidLoginCredentialsCopyWith<T, $Res> {
-  __$InvalidLoginCredentialsCopyWithImpl(_InvalidLoginCredentials<T> _value,
-      $Res Function(_InvalidLoginCredentials<T>) _then)
-      : super(_value, (v) => _then(v as _InvalidLoginCredentials<T>));
+    implements _$$_InvalidLoginCredentialsCopyWith<T, $Res> {
+  __$$_InvalidLoginCredentialsCopyWithImpl(_$_InvalidLoginCredentials<T> _value,
+      $Res Function(_$_InvalidLoginCredentials<T>) _then)
+      : super(_value, (v) => _then(v as _$_InvalidLoginCredentials<T>));
 
   @override
-  _InvalidLoginCredentials<T> get _value =>
-      super._value as _InvalidLoginCredentials<T>;
+  _$_InvalidLoginCredentials<T> get _value =>
+      super._value as _$_InvalidLoginCredentials<T>;
 }
 
 /// @nodoc
@@ -3397,16 +3401,15 @@ class _$_InvalidLoginCredentials<T> extends _InvalidLoginCredentials<T>
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty(
-          'type', 'ResponseError<$T>.invalidLoginCredentials'));
+    properties.add(DiagnosticsProperty(
+        'type', 'ResponseError<$T>.invalidLoginCredentials'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _InvalidLoginCredentials<T>);
+            other is _$_InvalidLoginCredentials<T>);
   }
 
   @override
@@ -3578,23 +3581,23 @@ abstract class _InvalidLoginCredentials<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$InvalidSearchTermErrorCopyWith<T, $Res> {
-  factory _$InvalidSearchTermErrorCopyWith(_InvalidSearchTermError<T> value,
-          $Res Function(_InvalidSearchTermError<T>) then) =
-      __$InvalidSearchTermErrorCopyWithImpl<T, $Res>;
+abstract class _$$_InvalidSearchTermErrorCopyWith<T, $Res> {
+  factory _$$_InvalidSearchTermErrorCopyWith(_$_InvalidSearchTermError<T> value,
+          $Res Function(_$_InvalidSearchTermError<T>) then) =
+      __$$_InvalidSearchTermErrorCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$InvalidSearchTermErrorCopyWithImpl<T, $Res>
+class __$$_InvalidSearchTermErrorCopyWithImpl<T, $Res>
     extends _$ResponseErrorCopyWithImpl<T, $Res>
-    implements _$InvalidSearchTermErrorCopyWith<T, $Res> {
-  __$InvalidSearchTermErrorCopyWithImpl(_InvalidSearchTermError<T> _value,
-      $Res Function(_InvalidSearchTermError<T>) _then)
-      : super(_value, (v) => _then(v as _InvalidSearchTermError<T>));
+    implements _$$_InvalidSearchTermErrorCopyWith<T, $Res> {
+  __$$_InvalidSearchTermErrorCopyWithImpl(_$_InvalidSearchTermError<T> _value,
+      $Res Function(_$_InvalidSearchTermError<T>) _then)
+      : super(_value, (v) => _then(v as _$_InvalidSearchTermError<T>));
 
   @override
-  _InvalidSearchTermError<T> get _value =>
-      super._value as _InvalidSearchTermError<T>;
+  _$_InvalidSearchTermError<T> get _value =>
+      super._value as _$_InvalidSearchTermError<T>;
 }
 
 /// @nodoc
@@ -3612,14 +3615,14 @@ class _$_InvalidSearchTermError<T> extends _InvalidSearchTermError<T>
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'ResponseError<$T>.invalidSearhTerm'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.invalidSearhTerm'));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _InvalidSearchTermError<T>);
+            other is _$_InvalidSearchTermError<T>);
   }
 
   @override

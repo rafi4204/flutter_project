@@ -81,11 +81,11 @@ class _$TokensResponseCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$TokensResponseCopyWith<$Res>
+abstract class _$$_TokensResponseCopyWith<$Res>
     implements $TokensResponseCopyWith<$Res> {
-  factory _$TokensResponseCopyWith(
-          _TokensResponse value, $Res Function(_TokensResponse) then) =
-      __$TokensResponseCopyWithImpl<$Res>;
+  factory _$$_TokensResponseCopyWith(
+          _$_TokensResponse value, $Res Function(_$_TokensResponse) then) =
+      __$$_TokensResponseCopyWithImpl<$Res>;
   @override
   $Res call(
       {String accessToken,
@@ -95,15 +95,15 @@ abstract class _$TokensResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$TokensResponseCopyWithImpl<$Res>
+class __$$_TokensResponseCopyWithImpl<$Res>
     extends _$TokensResponseCopyWithImpl<$Res>
-    implements _$TokensResponseCopyWith<$Res> {
-  __$TokensResponseCopyWithImpl(
-      _TokensResponse _value, $Res Function(_TokensResponse) _then)
-      : super(_value, (v) => _then(v as _TokensResponse));
+    implements _$$_TokensResponseCopyWith<$Res> {
+  __$$_TokensResponseCopyWithImpl(
+      _$_TokensResponse _value, $Res Function(_$_TokensResponse) _then)
+      : super(_value, (v) => _then(v as _$_TokensResponse));
 
   @override
-  _TokensResponse get _value => super._value as _TokensResponse;
+  _$_TokensResponse get _value => super._value as _$_TokensResponse;
 
   @override
   $Res call({
@@ -112,7 +112,7 @@ class __$TokensResponseCopyWithImpl<$Res>
     Object? tokenType = freezed,
     Object? expiresIn = freezed,
   }) {
-    return _then(_TokensResponse(
+    return _then(_$_TokensResponse(
       accessToken: accessToken == freezed
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
@@ -164,7 +164,7 @@ class _$_TokensResponse extends _TokensResponse {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TokensResponse &&
+            other is _$_TokensResponse &&
             const DeepCollectionEquality()
                 .equals(other.accessToken, accessToken) &&
             const DeepCollectionEquality()
@@ -184,12 +184,14 @@ class _$_TokensResponse extends _TokensResponse {
 
   @JsonKey(ignore: true)
   @override
-  _$TokensResponseCopyWith<_TokensResponse> get copyWith =>
-      __$TokensResponseCopyWithImpl<_TokensResponse>(this, _$identity);
+  _$$_TokensResponseCopyWith<_$_TokensResponse> get copyWith =>
+      __$$_TokensResponseCopyWithImpl<_$_TokensResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TokensResponseToJson(this);
+    return _$$_TokensResponseToJson(
+      this,
+    );
   }
 }
 
@@ -205,15 +207,15 @@ abstract class _TokensResponse extends TokensResponse {
       _$_TokensResponse.fromJson;
 
   @override
-  String get accessToken => throw _privateConstructorUsedError;
+  String get accessToken;
   @override
-  String get refreshToken => throw _privateConstructorUsedError;
+  String get refreshToken;
   @override
-  String get tokenType => throw _privateConstructorUsedError;
+  String get tokenType;
   @override
-  double get expiresIn => throw _privateConstructorUsedError;
+  double get expiresIn;
   @override
   @JsonKey(ignore: true)
-  _$TokensResponseCopyWith<_TokensResponse> get copyWith =>
+  _$$_TokensResponseCopyWith<_$_TokensResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }

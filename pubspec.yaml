@@ -35,32 +35,37 @@ dependencies:
   # Net
   dio: ^4.0.6
   jaguar_jwt: ^3.0.0
-
+  retrofit: '>=3.0.0 <4.0.0'
+  retrofit_generator: '>=4.0.0 <5.0.0'
   # Utility
-  device_info_plus: ^3.2.3
+  device_info_plus: ^4.1.2
   package_info_plus: ^1.4.2
 
   # Persistence
   shared_preferences: ^2.0.13
 
   # Architecture
-  freezed_annotation: 2.0.1
+  freezed_annotation: ^2.1.0
   json_annotation: ^4.4.0
   injectable: 1.5.3
   get_it: ^7.2.0
-  auto_route: ^3.2.4
+  auto_route: ^5.0.1
   flutter_bloc: ^8.0.1
   rxdart: ^0.27.3
+  firebase_auth: ^3.9.0
+  firebase_core: ^1.24.0
+  pretty_dio_logger: ^1.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   build_runner: ^2.1.8
-  injectable_generator: 1.5.3
-  freezed: 2.0.2
+  injectable_generator: ^1.5.4
+  freezed: ^2.1.0+1
   json_serializable: ^6.1.5
-  auto_route_generator: ^3.2.3
-  flutter_lints: ^1.0.4
+  auto_route_generator: ^5.0.2
+  flutter_lints: ^2.0.1
+  change_app_package_name: ^1.1.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

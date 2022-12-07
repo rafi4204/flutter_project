@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 /// This class handles the authentication state of the whole app.
 
-@LazySingleton()
+
 class AuthPreferences {
   AuthPreferences(this._preferences);
 
@@ -39,6 +39,10 @@ class AuthPreferences {
 
   Future setRefreshTokenExpiry(double expiresIn) {
     return _preferences.setDouble(_refreshTokenExpiryKey, expiresIn);
+  }
+
+  Future saveAccessToken(String token) async {
+    await setAccessToken(token);
   }
 
   Future setAuthTokens(AuthTokens authTokens) async {

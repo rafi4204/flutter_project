@@ -101,9 +101,10 @@ class _$APIErrorCopyWithImpl<$Res> implements $APIErrorCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$APIErrorCopyWith<$Res> implements $APIErrorCopyWith<$Res> {
-  factory _$APIErrorCopyWith(_APIError value, $Res Function(_APIError) then) =
-      __$APIErrorCopyWithImpl<$Res>;
+abstract class _$$_APIErrorCopyWith<$Res> implements $APIErrorCopyWith<$Res> {
+  factory _$$_APIErrorCopyWith(
+          _$_APIError value, $Res Function(_$_APIError) then) =
+      __$$_APIErrorCopyWithImpl<$Res>;
   @override
   $Res call(
       {String? requestId,
@@ -116,13 +117,14 @@ abstract class _$APIErrorCopyWith<$Res> implements $APIErrorCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$APIErrorCopyWithImpl<$Res> extends _$APIErrorCopyWithImpl<$Res>
-    implements _$APIErrorCopyWith<$Res> {
-  __$APIErrorCopyWithImpl(_APIError _value, $Res Function(_APIError) _then)
-      : super(_value, (v) => _then(v as _APIError));
+class __$$_APIErrorCopyWithImpl<$Res> extends _$APIErrorCopyWithImpl<$Res>
+    implements _$$_APIErrorCopyWith<$Res> {
+  __$$_APIErrorCopyWithImpl(
+      _$_APIError _value, $Res Function(_$_APIError) _then)
+      : super(_value, (v) => _then(v as _$_APIError));
 
   @override
-  _APIError get _value => super._value as _APIError;
+  _$_APIError get _value => super._value as _$_APIError;
 
   @override
   $Res call({
@@ -134,7 +136,7 @@ class __$APIErrorCopyWithImpl<$Res> extends _$APIErrorCopyWithImpl<$Res>
     Object? errorName = freezed,
     Object? path = freezed,
   }) {
-    return _then(_APIError(
+    return _then(_$_APIError(
       requestId: requestId == freezed
           ? _value.requestId
           : requestId // ignore: cast_nullable_to_non_nullable
@@ -207,7 +209,7 @@ class _$_APIError implements _APIError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _APIError &&
+            other is _$_APIError &&
             const DeepCollectionEquality().equals(other.requestId, requestId) &&
             const DeepCollectionEquality().equals(other.timestamp, timestamp) &&
             const DeepCollectionEquality()
@@ -233,12 +235,14 @@ class _$_APIError implements _APIError {
 
   @JsonKey(ignore: true)
   @override
-  _$APIErrorCopyWith<_APIError> get copyWith =>
-      __$APIErrorCopyWithImpl<_APIError>(this, _$identity);
+  _$$_APIErrorCopyWith<_$_APIError> get copyWith =>
+      __$$_APIErrorCopyWithImpl<_$_APIError>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_APIErrorToJson(this);
+    return _$$_APIErrorToJson(
+      this,
+    );
   }
 }
 
@@ -256,23 +260,23 @@ abstract class _APIError implements APIError {
   factory _APIError.fromJson(Map<String, dynamic> json) = _$_APIError.fromJson;
 
   @override
-  String? get requestId => throw _privateConstructorUsedError;
+  String? get requestId;
   @override
-  String? get timestamp => throw _privateConstructorUsedError;
+  String? get timestamp;
   @override
-  int get statusCode => throw _privateConstructorUsedError;
+  int get statusCode;
   @override
-  String get message => throw _privateConstructorUsedError;
+  String get message;
   @override
-  String get localizedMessage => throw _privateConstructorUsedError;
+  String get localizedMessage;
   @override
   @JsonKey(unknownEnumValue: ErrorName.unknown)
-  ErrorName get errorName => throw _privateConstructorUsedError;
+  ErrorName get errorName;
   @override
-  String? get path => throw _privateConstructorUsedError;
+  String? get path;
   @override
   @JsonKey(ignore: true)
-  _$APIErrorCopyWith<_APIError> get copyWith =>
+  _$$_APIErrorCopyWith<_$_APIError> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -333,11 +337,11 @@ class _$ErrorResponseCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$ErrorResponseCopyWith<$Res>
+abstract class _$$_ErrorResponseCopyWith<$Res>
     implements $ErrorResponseCopyWith<$Res> {
-  factory _$ErrorResponseCopyWith(
-          _ErrorResponse value, $Res Function(_ErrorResponse) then) =
-      __$ErrorResponseCopyWithImpl<$Res>;
+  factory _$$_ErrorResponseCopyWith(
+          _$_ErrorResponse value, $Res Function(_$_ErrorResponse) then) =
+      __$$_ErrorResponseCopyWithImpl<$Res>;
   @override
   $Res call({APIError error});
 
@@ -346,21 +350,21 @@ abstract class _$ErrorResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ErrorResponseCopyWithImpl<$Res>
+class __$$_ErrorResponseCopyWithImpl<$Res>
     extends _$ErrorResponseCopyWithImpl<$Res>
-    implements _$ErrorResponseCopyWith<$Res> {
-  __$ErrorResponseCopyWithImpl(
-      _ErrorResponse _value, $Res Function(_ErrorResponse) _then)
-      : super(_value, (v) => _then(v as _ErrorResponse));
+    implements _$$_ErrorResponseCopyWith<$Res> {
+  __$$_ErrorResponseCopyWithImpl(
+      _$_ErrorResponse _value, $Res Function(_$_ErrorResponse) _then)
+      : super(_value, (v) => _then(v as _$_ErrorResponse));
 
   @override
-  _ErrorResponse get _value => super._value as _ErrorResponse;
+  _$_ErrorResponse get _value => super._value as _$_ErrorResponse;
 
   @override
   $Res call({
     Object? error = freezed,
   }) {
-    return _then(_ErrorResponse(
+    return _then(_$_ErrorResponse(
       error: error == freezed
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -392,7 +396,7 @@ class _$_ErrorResponse implements _ErrorResponse {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ErrorResponse &&
+            other is _$_ErrorResponse &&
             const DeepCollectionEquality().equals(other.error, error));
   }
 
@@ -403,12 +407,14 @@ class _$_ErrorResponse implements _ErrorResponse {
 
   @JsonKey(ignore: true)
   @override
-  _$ErrorResponseCopyWith<_ErrorResponse> get copyWith =>
-      __$ErrorResponseCopyWithImpl<_ErrorResponse>(this, _$identity);
+  _$$_ErrorResponseCopyWith<_$_ErrorResponse> get copyWith =>
+      __$$_ErrorResponseCopyWithImpl<_$_ErrorResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ErrorResponseToJson(this);
+    return _$$_ErrorResponseToJson(
+      this,
+    );
   }
 }
 
@@ -422,9 +428,9 @@ abstract class _ErrorResponse implements ErrorResponse {
   @override //TODO: name this according to the map key from the error response
 //if no map key exists then just create this factory with the APIError values
 //and remove APIError,
-  APIError get error => throw _privateConstructorUsedError;
+  APIError get error;
   @override
   @JsonKey(ignore: true)
-  _$ErrorResponseCopyWith<_ErrorResponse> get copyWith =>
+  _$$_ErrorResponseCopyWith<_$_ErrorResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }

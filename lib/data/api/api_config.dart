@@ -1,10 +1,12 @@
+import 'package:flutter_template/injection/injector.dart';
 import 'package:injectable/injectable.dart';
+
+import '../../presentation/app_flavor.dart';
 
 @Injectable()
 class ApiConfig {
-  final String baseUrl;
+  final baseUrl = injector.get<AppFlavor>().baseUrl;
 
-  ApiConfig(this.baseUrl);
+  String get apiUrl => baseUrl;
 
-  String get apiUrl => '$baseUrl/api';
 }

@@ -10,4 +10,7 @@ class AppNavigator {
   Future navigateToHome() {
     return _appRouter.replace(HomeScreenRoute());
   }
+  Future navigateToLogin() {
+    return _appRouter.replace(LoginScreenRoute());
+  }
 }

@@ -59,31 +59,32 @@ class _$ProfileStateCopyWithImpl<$Res> implements $ProfileStateCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ProfileStateCopyWith<$Res>
+abstract class _$$_ProfileStateCopyWith<$Res>
     implements $ProfileStateCopyWith<$Res> {
-  factory _$ProfileStateCopyWith(
-          _ProfileState value, $Res Function(_ProfileState) then) =
-      __$ProfileStateCopyWithImpl<$Res>;
+  factory _$$_ProfileStateCopyWith(
+          _$_ProfileState value, $Res Function(_$_ProfileState) then) =
+      __$$_ProfileStateCopyWithImpl<$Res>;
   @override
   $Res call({bool isLoading, String name});
 }
 
 /// @nodoc
-class __$ProfileStateCopyWithImpl<$Res> extends _$ProfileStateCopyWithImpl<$Res>
-    implements _$ProfileStateCopyWith<$Res> {
-  __$ProfileStateCopyWithImpl(
-      _ProfileState _value, $Res Function(_ProfileState) _then)
-      : super(_value, (v) => _then(v as _ProfileState));
+class __$$_ProfileStateCopyWithImpl<$Res>
+    extends _$ProfileStateCopyWithImpl<$Res>
+    implements _$$_ProfileStateCopyWith<$Res> {
+  __$$_ProfileStateCopyWithImpl(
+      _$_ProfileState _value, $Res Function(_$_ProfileState) _then)
+      : super(_value, (v) => _then(v as _$_ProfileState));
 
   @override
-  _ProfileState get _value => super._value as _ProfileState;
+  _$_ProfileState get _value => super._value as _$_ProfileState;
 
   @override
   $Res call({
     Object? isLoading = freezed,
     Object? name = freezed,
   }) {
-    return _then(_ProfileState(
+    return _then(_$_ProfileState(
       isLoading: isLoading == freezed
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -115,7 +116,7 @@ class _$_ProfileState extends _ProfileState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ProfileState &&
+            other is _$_ProfileState &&
             const DeepCollectionEquality().equals(other.isLoading, isLoading) &&
             const DeepCollectionEquality().equals(other.name, name));
   }
@@ -128,8 +129,8 @@ class _$_ProfileState extends _ProfileState {
 
   @JsonKey(ignore: true)
   @override
-  _$ProfileStateCopyWith<_ProfileState> get copyWith =>
-      __$ProfileStateCopyWithImpl<_ProfileState>(this, _$identity);
+  _$$_ProfileStateCopyWith<_$_ProfileState> get copyWith =>
+      __$$_ProfileStateCopyWithImpl<_$_ProfileState>(this, _$identity);
 }
 
 abstract class _ProfileState extends ProfileState {
@@ -139,11 +140,11 @@ abstract class _ProfileState extends ProfileState {
   _ProfileState._() : super._();
 
   @override
-  bool get isLoading => throw _privateConstructorUsedError;
+  bool get isLoading;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
   @JsonKey(ignore: true)
-  _$ProfileStateCopyWith<_ProfileState> get copyWith =>
+  _$$_ProfileStateCopyWith<_$_ProfileState> get copyWith =>
       throw _privateConstructorUsedError;
 }

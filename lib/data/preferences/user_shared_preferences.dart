@@ -7,7 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 /// Store the current authenticated user's basic information.
 
-@LazySingleton()
+
 class UserSharedPreferences extends UserPreferences {
   UserSharedPreferences(this._preferences);
 
